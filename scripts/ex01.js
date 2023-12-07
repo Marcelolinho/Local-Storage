@@ -19,7 +19,7 @@ document.getElementById('sendBtn').addEventListener('click', () => {
 
     document.querySelector('#p').textContent = 'Resultado no local Storage'
 
-    let storedResults = JSON.parse(localStorage.getItem('ex01') || '[]');
-    storedResults.push(result);
-    localStorage.setItem('ex01', JSON.stringify(storedResults));
+    let storedResults = JSON.parse(localStorage.getItem('ex01') || '[]')
+    storedResults.push(result)
+    localStorage.setItem('ex01', JSON.stringify(storedResults))
 })
